@@ -1,0 +1,45 @@
+name: emotionly
+description: Online meeting emotion analysis
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.2
+  agora_rtc_engine: ^3.3.2
+  permission_handler: ^6.1.1
+  http: ^0.13.1
+  fl_chart: ^0.35.0
+  shared_preferences: ^2.0.5
+  file_picker: ^3.0.1
+  flutter_dotenv: ^3.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+
+  uses-material-design: true
+
+  fonts:
+    - family: Nexa
+      fonts:
+        - asset: fonts/nexa_bold.otf
+
+    - family: Poppins
+      fonts:
+        - asset: fonts/Poppins-Regular.ttf
+
+  assets:
+    - assets/
+    - .env
