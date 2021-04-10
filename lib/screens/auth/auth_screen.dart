@@ -170,7 +170,6 @@ class Login extends StatelessWidget {
                 style: TextStyle(
                   fontFamily: "Poppins",
                   color: Colors.white,
-                  fontSize: 15,
                 ),
               ),
               SizedBox(width: 6),
@@ -183,7 +182,6 @@ class Login extends StatelessWidget {
                   style: TextStyle(
                     fontFamily: "Poppins",
                     color: common.blue,
-                    fontSize: 15,
                   ),
                 ),
               ),
@@ -337,7 +335,6 @@ class SignUp extends StatelessWidget {
                 style: TextStyle(
                   fontFamily: "Poppins",
                   color: Colors.white,
-                  fontSize: 15,
                 ),
               ),
               TextButton(
@@ -349,7 +346,6 @@ class SignUp extends StatelessWidget {
                   style: TextStyle(
                     fontFamily: "Poppins",
                     color: common.blue,
-                    fontSize: 15,
                   ),
                 ),
               ),

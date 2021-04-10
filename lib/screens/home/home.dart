@@ -242,6 +242,8 @@ class _HomeState extends State<Home> {
             final String channel = result["meetingDetails"]["channel"];
             final String token = result["meetingDetails"]["token"];
             final int mid = result["meetingDetails"]["mid"];
+            final int uid = result["meetingDetails"]["uid"];
+            print("TOKEN - $token");
 
             await Navigator.push(
               context,
@@ -251,6 +253,7 @@ class _HomeState extends State<Home> {
                   role: ClientRole.Broadcaster,
                   token: token,
                   mid: mid,
+                  uid: uid,
                 ),
               ),
             );
@@ -273,6 +276,7 @@ class _HomeState extends State<Home> {
                   role: ClientRole.Broadcaster,
                   token: token,
                   mid: mid,
+                  uid: uid,
                 ),
               ),
             );

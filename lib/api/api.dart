@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
 
 class ApiService {
@@ -20,7 +21,7 @@ class ApiService {
   Future signUpUser(String name, String email, String password) async {
     var headers = {'Content-Type': 'application/json'};
     var request =
-        http.Request('POST', Uri.parse('http://3.86.104.208:8000/auth/signup'));
+        http.Request('POST', Uri.parse('${env['endpoint']}/auth/signup'));
     request.body =
         '''{\r\n    "email":"$email",\r\n    "password":"$password",\r\n    "name":"$name"\r\n}''';
     request.headers.addAll(headers);
@@ -38,7 +39,7 @@ class ApiService {
   Future loginUser(String email, String password) async {
     var headers = {'Content-Type': 'application/json'};
     var request =
-        http.Request('POST', Uri.parse('http://3.86.104.208:8000/auth/login'));
+        http.Request('POST', Uri.parse('${env['endpoint']}/auth/login'));
     request.body =
         '''{\r\n    "email":"$email",\r\n    "password":"$password"\r\n}''';
     request.headers.addAll(headers);
@@ -55,8 +56,7 @@ class ApiService {
 
   Future getUserDetails(String authToken) async {
     var headers = {'Authorization': authToken};
-    var request =
-        http.Request('GET', Uri.parse('http://3.86.104.208:8000/user'));
+    var request = http.Request('GET', Uri.parse('${env['endpoint']}/user'));
 
     request.headers.addAll(headers);
 
@@ -72,8 +72,8 @@ class ApiService {
 
   Future updateUserAvatar(String authToken, File image) async {
     var headers = {'Authorization': authToken};
-    var request = http.MultipartRequest(
-        'POST', Uri.parse('http://3.86.104.208:8000/user'));
+    var request =
+        http.MultipartRequest('POST', Uri.parse('${env['endpoint']}/user'));
     request.files.add(await http.MultipartFile.fromPath('image', image.path));
     request.headers.addAll(headers);
 
@@ -88,8 +88,8 @@ class ApiService {
   Future createMeeting(String authToken) async {
     var headers = {'Authorization': authToken};
     // http://3.86.104.208:8000
-    var request = http.Request(
-        'GET', Uri.parse('http://3.86.104.208:8000/meeting/create'));
+    var request =
+        http.Request('GET', Uri.parse('${env['endpoint']}/meeting/create'));
 
     request.headers.addAll(headers);
 
@@ -108,8 +108,8 @@ class ApiService {
       'Authorization': authToken,
       'Content-Type': 'application/json'
     };
-    var request = http.Request(
-        'POST', Uri.parse('http://3.86.104.208:8000/meeting/join'));
+    var request =
+        http.Request('POST', Uri.parse('${env['endpoint']}/meeting/join'));
     request.body = '''{\r\n    "channel":"$channel"\r\n}''';
     request.headers.addAll(headers);
 

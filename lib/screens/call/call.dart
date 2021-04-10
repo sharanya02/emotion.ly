@@ -13,11 +13,13 @@ class CallPage extends StatefulWidget {
     @required this.role,
     @required this.token,
     @required this.mid,
+    @required this.uid,
   });
   final String channelName;
   final ClientRole role;
   final String token;
   final int mid;
+  final int uid;
 
   @override
   _CallPageState createState() => _CallPageState();
@@ -122,12 +124,11 @@ class _CallPageState extends State<CallPage> {
     configuration.dimensions = VideoDimensions(1920, 1080);
     await _engine.setVideoEncoderConfiguration(configuration);
     await _engine.joinChannel(
-      "006f0515b152d0a4930b68fcde44e7763c3IABAvWu8k6PtqFphzK39wps/gyf5MLf6RZqKzhL6O0XDYWvdK4kAAAAAIgBQZIIFB7RyYAQAAQAHtHJgAgAHtHJgAwAHtHJgBAAHtHJg",
-      "MbF-OzA-vPu",
+      widget.token,
+      widget.channelName,
       null,
-      0,
+      widget.uid,
     );
-    await _engine.enableFaceDetection(true);
   }
 
   /// Create agora sdk instance and initialize
