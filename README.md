@@ -6,10 +6,10 @@ Presenting to you Emotion.ly an AI based video-meet app which analyses the emoti
 
 Login Page           |  Home Page
 :-------------------------:|:-------------------------:
-![Login](https://user-images.githubusercontent.com/59786899/114234482-71e96080-999c-11eb-865c-e2925e840286.png)  |  ![Home](https://user-images.githubusercontent.com/59786899/114234540-8af21180-999c-11eb-8690-b9ed49c96d65.png)  
+![Login](https://user-images.githubusercontent.com/59786899/114266732-769e2b00-9a15-11eb-8ee3-d5cb3b23cd27.png)  |  ![Home](https://user-images.githubusercontent.com/59786899/114266735-79008500-9a15-11eb-980d-8c33f3b18425.png)  
 
 Meeting Page             |  Profile Page
 :-------------------------:|:-------------------------:
-![Call](https://user-images.githubusercontent.com/59786899/114234771-d4daf780-999c-11eb-93a1-589ea1467e31.png)  |  ![Profile](https://user-images.githubusercontent.com/59786899/114234744-cc82bc80-999c-11eb-8684-cb9f48c40871.png)  
+![Call](https://user-images.githubusercontent.com/59786899/114234771-d4daf780-999c-11eb-93a1-589ea1467e31.png)  |  ![Profile](https://user-images.githubusercontent.com/59786899/114266747-8584dd80-9a15-11eb-873a-9cbf9dec2618.png)  
 
-![Result](https://user-images.githubusercontent.com/59786899/114234821-eae8b800-999c-11eb-9951-ee1223f03578.png)
+![Result](https://user-images.githubusercontent.com/59786899/114266752-8e75af00-9a15-11eb-9428-f35f764c169d.png)
