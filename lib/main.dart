@@ -1,3 +1,4 @@
+import 'package:emotionly/screens/auth/auth_handler.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart' as DotEnv;
 
@@ -11,13 +12,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Emotion.ly',
       theme: ThemeData(
           primarySwatch: Colors.blue,
           textSelectionTheme: TextSelectionThemeData(cursorColor: Colors.white),
           tooltipTheme:
               TooltipThemeData(decoration: BoxDecoration(color: Colors.white))),
-      home: Container(),
+      home: AuthHandler().handleAuth(),
     );
   }
 }
