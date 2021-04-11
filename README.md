@@ -4,7 +4,7 @@ Be it a fun conversation or a boring presentation. We always wanted to know how 
 
 Presenting to you Emotion.ly an AI based video-meet app which analyses the emotions of various participants during the conversation of the meeting and gives you the statistics you need, of the emotions of the overall group, as well as the individual members in that conversation  
 
-[Backend Repo](https://github.com/vishal-1408/EMOTION.LY)
+[Backend Repo](https://github.com/vishal-1408/Emotion.ly)
 
 Login Page           |  Home Page
 :-------------------------:|:-------------------------:
